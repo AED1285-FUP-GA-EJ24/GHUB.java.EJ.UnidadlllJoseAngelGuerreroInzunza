@@ -8,14 +8,14 @@ public class Ine{
     //Salida
     String resultado;
      //Entrada
-    int anioA,anioN;
+    int aniosA,aniosN;
     //Aux
     int Anios;
 
     System.out.print("Proporciona el año actual: ");
-    anioA = teclado.nextInt();
+    aniosA = teclado.nextInt();
     System.out.print("Proporciona tu año de nacimiento: ");
-    anioN = teclado.nextInt();
+    aniosN = teclado.nextInt();
 
     Anios = AniosA-AniosN;
 
