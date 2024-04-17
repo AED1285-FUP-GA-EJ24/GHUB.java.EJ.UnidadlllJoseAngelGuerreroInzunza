@@ -50,6 +50,7 @@ public class Romano {
           break;
   }
   System.out.print("Numero romano"+roma);
+  teclado.close();
 }
 }
 
