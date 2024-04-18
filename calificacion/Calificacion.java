@@ -31,6 +31,7 @@ public class Calificacion {
                 case 1:
                 case 0:
                 System.out.println("Reprobado");
+                break;
         default:
         System.out.println("Nota invalida");
             break;
