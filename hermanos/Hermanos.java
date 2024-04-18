@@ -3,36 +3,32 @@ package hermanos;
 import java.util.Scanner;
 public class Hermanos {
  public void Diferencia(){
+ //Definir un objeto Scanner;
  Scanner teclado = new Scanner(System.in);
- //Entrada
- int edad1,edad2;
- string nombre1,nombre2;
- //Salida
- int diferencia;
- string nombre;
-
-System.out.print("Dime el nombre tuyo: ");
-nombre1 = teclado.nextInt();
-System.out.print("Dime el nombre de tu hermano: ");
-nombre2 = teclado.nextInt();
-System.out.print("Dime ahora tu edad: ");
-edad1 = teclado.nextInt();
-System.out.print("Dime ahora la edad de tu hermano: ");
-edad2 = teclado.nextInt();
-nombre1 = (string)edad1;
-nombre2 = (string)edad2;
-
-if(edad1>edad2){
-    diferencia = edad1-edad2;
-    nombre = nombre1;
-}
-else{
-   diferencia = edad2-edad1;
-   nombre = nombre2;
-}
-
-System.out.println("El hermano mayor es"+nombre+"y la diferencia es"+diferencia);
-
+ //Definir salida
+ String nombreHermanoMayor;
+ byte difEdad;
+ //Definir entrada
+ String nombre1,nombre2;
+ byte edad1,edad2;
+ System.out.print("Proporciona nombre de hermano1:");
+ nombre1 = teclado.next();
+ System.out.print("Proporciona edad de hermano 1:");
+ edad1 = teclado.nextByte();
+ System.out.print("Proporciona nombre de hermano2:");
+ nombre2 = teclado.next();
+ System.out.print("Proporciona edad de hermano 2:");
+ edad2 = teclado.nextByte();
+ if (edad1>edad2){
+     difEdad = (byte)(edad1 - edad2);
+     nombreHermanoMayor = nombre1;
+ } else{
+     difEdad = (byte)(edad2 - edad1);
+     nombreHermanoMayor = nombre2;
+ }
+ System.out.println("Nombre del Hermano Mayor es "+nombreHermanoMayor);
+ System.err.println("Diferencia de Edad es "+difEdad);
+ teclado.close();
 
  }
     

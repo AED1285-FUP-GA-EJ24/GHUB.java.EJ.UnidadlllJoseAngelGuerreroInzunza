@@ -11,25 +11,28 @@ public class Vocal {
         voc = teclado.next().charAt(0);
 
         switch (voc) {
-            case "a":
+            case 'a':
                 System.out.println("1");
                 break;
-            case "e":
+            case 'e':
                 System.out.println("2");
                 break;
-            case "i":
+            case 'i':
                 System.out.println("3");
                 break;
-            case "o":
+            case 'o':
                 System.out.println("4");
                 break;
-            case "u":
+            case 'u':
                 System.out.println("5");
                 break;
+        
             default:
-               System.out.println("Caracter Incorrecto");
+                System.out.println("Caracter inválido");
                 break;
-        }    
-
+        }
+        //El break, salta a esta linea
+        System.out.println("Salí de la sentencia switch");
+        teclado.close();
     }
 }

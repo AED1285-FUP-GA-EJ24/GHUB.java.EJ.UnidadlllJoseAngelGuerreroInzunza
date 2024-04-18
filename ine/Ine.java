@@ -4,30 +4,30 @@ import java.util.Scanner;
 public class Ine{
 
    public void DeterminarSiIne(){
-    Scanner teclado = new Scanner(System.in);
-    //Salida
-    String resultado;
-     //Entrada
-    int aniosA,aniosN;
-    //Aux
-    int Anios;
+      //definir un objeto Scanner
+      Scanner teclado = new Scanner(System.in);
+      //definir variable de salida
+      String resultado;
+      //definir variable de entrada
+      int anioActual,anioNacimiento;
+      //definir variable auxiliar
+      int anios;
 
-    System.out.print("Proporciona el año actual: ");
-    aniosA = teclado.nextInt();
-    System.out.print("Proporciona tu año de nacimiento: ");
-    aniosN = teclado.nextInt();
+      System.out.print("Proporciona Año Actual: ");
+      anioActual = teclado.nextInt();
+      System.out.print("Proporciona Año de Nacimiento:");
+      anioNacimiento = teclado.nextInt();
 
-    Anios = AniosA-AniosN;
+      anios = anioActual - anioNacimiento;
 
-    if(Anios>=18){
-        resultado = "Usted puede tramitar su INE";
-    }
-    else{
-        resultado = "Usted no puede tramitar su INE";
-    }
-
-    System.out.println(resultado);
-
+      if(anios>=18)
+          resultado = "Usted puede tramitar su INE";
+      
+      else
+          resultado = "Usted NO PUEDS tramitar su INE";
+      
+      System.out.println(resultado);
+teclado.close();
 
 
    }
