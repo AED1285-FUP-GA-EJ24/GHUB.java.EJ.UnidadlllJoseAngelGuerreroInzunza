@@ -3,7 +3,7 @@ package ine;
 import java.util.Scanner;
 public class Ine{
 
-   public void DeterminarSiIne(){
+   public void ine(){
       //definir un objeto Scanner
       Scanner teclado = new Scanner(System.in);
       //definir variable de salida
