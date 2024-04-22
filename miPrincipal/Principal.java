@@ -8,7 +8,7 @@ import incentivo.Incentivo;
 import ine.Ine;
 import mayor.Mayor;
 import menorde3.Menorde3;
-//import peaje.Peaje;
+import peaje.Peaje;
 import romano.Romano;
 import triangulo.Triangulo;
 import vocal.Vocal;
@@ -21,7 +21,7 @@ public class Principal {
     int trabajo;
 
     System.out.println( "------------------------------------------------------------------");
-	System.out.println ("                            MENU DE OPCIONES");
+	System.out.println ("                            TRABAJOS DE UNIDAD 3");
 	System.out.println ("------------------------------------------------------------------");
 	System.out.println ("");
 	System.out.println ("1) Calcular edad INE"); 
@@ -37,7 +37,7 @@ public class Principal {
 	System.out.println ("");
 	System.out.println ("..................................................................");
 	System.out.println ("");
-	System.out.println ("Introduzca su tipo de vehiculo (1 al 10)");
+	System.out.println ("Introduzca el trabajo que quieres ir (1 al 10)");
 	 trabajo = teclado.nextInt();
 	System.out.println ("");
     switch (trabajo) {
@@ -78,13 +78,14 @@ public class Principal {
         calificacion.calificacion();
             break;
         case 10:
-        //Peaje objpeaje = new Peaje();
-        //objpeaje.peaje();
+        Peaje objpeaje = new Peaje();
+        objpeaje.peaje();
             break;
     
         default:
         System.out.println("No existe");
             break;
     }
+    teclado.close();
     }
 }

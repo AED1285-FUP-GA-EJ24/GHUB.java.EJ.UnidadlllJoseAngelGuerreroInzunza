@@ -7,7 +7,7 @@ public class Vocal {
         //Entrada
         char voc;
 
-        System.out.print("Da una vocal");
+        System.out.print("Da una vocal ");
         voc = teclado.next().charAt(0);
     
         //V4
