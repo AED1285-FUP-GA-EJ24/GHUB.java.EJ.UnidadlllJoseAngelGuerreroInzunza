@@ -40,7 +40,7 @@ public class Principal {
 	System.out.println ("");
 	System.out.println ("..................................................................");
 	System.out.println ("");
-	System.out.println ("Introduzca el trabajo que quieres ir (1 al 10)");
+	System.out.println ("Introduzca el trabajo que quieres ir (1 al 11)");
 	 trabajo = teclado.nextInt();
 	System.out.println ("");
     switch (trabajo) {
