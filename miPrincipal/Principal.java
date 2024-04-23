@@ -2,6 +2,7 @@ package miPrincipal;
 
 import java.util.Scanner;
 
+import bono.Bono;
 import calificacion.Calificacion;
 import hermanos.Hermanos;
 import incentivo.Incentivo;
@@ -12,6 +13,7 @@ import peaje.Peaje;
 import romano.Romano;
 import triangulo.Triangulo;
 import vocal.Vocal;
+
 
 public class Principal {
     
@@ -34,6 +36,7 @@ public class Principal {
     System.out.println ("8) Menor, igual o mayor a 3"); 
     System.out.println ("9) Calificaion"); 
     System.out.println ("10) Tarifa"); 
+    System.out.println ("11) Determinacion de bono"); 
 	System.out.println ("");
 	System.out.println ("..................................................................");
 	System.out.println ("");
@@ -81,6 +84,10 @@ public class Principal {
         Peaje objpeaje = new Peaje();
         objpeaje.peaje();
             break;
+        case 11:
+        Bono objbono = new Bono();
+        objbono.bono();
+        break;
     
         default:
         System.out.println("No existe");
