@@ -13,6 +13,8 @@ import peaje.Peaje;
 import romano.Romano;
 import triangulo.Triangulo;
 import vocal.Vocal;
+import demoFor.DemoFor;
+
 
 
 public class Principal {
@@ -37,6 +39,7 @@ public class Principal {
     System.out.println ("9) Calificaion"); 
     System.out.println ("10) Tarifa"); 
     System.out.println ("11) Determinacion de bono"); 
+    System.out.println("*12) Demo For                         ");
 	System.out.println ("");
 	System.out.println ("..................................................................");
 	System.out.println ("");
@@ -88,6 +91,10 @@ public class Principal {
         Bono objbono = new Bono();
         objbono.bono();
         break;
+        case 12:
+             DemoFor objDemoFor = new DemoFor();
+             objDemoFor.demofor();
+             break;
     
         default:
         System.out.println("No existe");
