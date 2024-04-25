@@ -1,7 +1,8 @@
 ./vocal/Vocal.java
+./sumaPares/SumaPares.java
 ./miTest/AppTest.java
 ./bono/Bono.java
-./bono/Principal.java
+./demoFor/DemoFor.java
 ./incentivo/Incentivo.java
 ./mayor/Mayor.java
 ./menorde3/Menorde3.java

@@ -11,6 +11,7 @@ import mayor.Mayor;
 import menorde3.Menorde3;
 import peaje.Peaje;
 import romano.Romano;
+import sumaPares.SumaPares;
 import triangulo.Triangulo;
 import vocal.Vocal;
 import demoFor.DemoFor;
@@ -39,11 +40,13 @@ public class Principal {
     System.out.println ("9) Calificaion"); 
     System.out.println ("10) Tarifa"); 
     System.out.println ("11) Determinacion de bono"); 
-    System.out.println("*12) Demo For                         ");
+    System.out.println("12) Demo For                         ");
+    System.out.println("13)Suma Pares                      ");
+
 	System.out.println ("");
 	System.out.println ("..................................................................");
 	System.out.println ("");
-	System.out.println ("Introduzca el trabajo que quieres ir (1 al 11)");
+	System.out.println ("Introduzca el trabajo que quieres ir (1 al 13)");
 	 trabajo = teclado.nextInt();
 	System.out.println ("");
     switch (trabajo) {
@@ -92,9 +95,13 @@ public class Principal {
         objbono.bono();
         break;
         case 12:
-             DemoFor objDemoFor = new DemoFor();
-             objDemoFor.demofor();
-             break;
+        DemoFor objDemoFor = new DemoFor();
+        objDemoFor.demofor();
+        break;
+        case 13:
+        SumaPares objSumaPares = new SumaPares();
+        objSumaPares.sumapares();
+        break;     
     
         default:
         System.out.println("No existe");

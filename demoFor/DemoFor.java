@@ -37,7 +37,43 @@ public class DemoFor {
         for(i=10;i>0;i-=2){ // i=i-2
             System.out.print("i="+i+" Hola"+"\n");
         }
+        System.out.println("Sali del buclo y la variable de control i - 2 = "+i);
+        short j;
+        for(j=0;j<=100;j+=20){
+        System.out.println("\t"+j+"\t"+j*j);
+        }
+        System.out.println("Valor final de J= "+j);
+       for(short n=0;n<100;n+=20){
+        System.out.println("\t"+n+"\t"+n*n);
+       }
 
+    //Como n esta declarada a nivel de bloque, por lo tanto se puede volver a utilizar
+    //con el mismo nombre y diferente declaracion
+
+       for(int n=0;n<100;n+=20){
+        System.out.println("\t"+n+"\t"+n*n);
+       }
+
+       /*
+       Inicializada la variable de control c, al caracter 'A' 
+        esto equivale al entero 65, porque ese es el codigo ASCI de A
+       */
+      System.out.println();
+       for(int c='A';c<='Z';c++){
+         System.out.println(c+" ");
+       }
+
+      System.out.println();
+       for(int c='A';c<='Z';c++){
+         System.out.println((char)(c)+" ");
+       }
+       System.out.println();
+
+       //Tambien podemos usar una variable como condicion de salida del bucle for
+       int m = 12;
+       for(int z=1;z<m;z++){
+        System.out.println("Valor de z = "+z);
+       }
 
     }
     
