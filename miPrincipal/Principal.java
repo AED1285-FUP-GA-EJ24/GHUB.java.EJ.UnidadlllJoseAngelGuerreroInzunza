@@ -15,6 +15,8 @@ import sumaPares.SumaPares;
 import triangulo.Triangulo;
 import vocal.Vocal;
 import demoFor.DemoFor;
+import demoIfAnidado.DemoIfAnidado;
+import demoOperadorTernario.DemoOperadorTernario;
 
 
 
@@ -40,13 +42,15 @@ public class Principal {
     System.out.println ("9) Calificaion"); 
     System.out.println ("10) Tarifa"); 
     System.out.println ("11) Determinacion de bono"); 
-    System.out.println("12) Demo For                         ");
-    System.out.println("13)Suma Pares                      ");
+    System.out.println ("12) Formas de IF anidado"); 
+    System.out.println ("13) Operador ternario ?: "); 
+    System.out.println("14) Demo For                         ");
+    System.out.println("15)Suma Pares                      ");
 
 	System.out.println ("");
 	System.out.println ("..................................................................");
 	System.out.println ("");
-	System.out.println ("Introduzca el trabajo que quieres ir (1 al 13)");
+	System.out.println ("Introduzca el trabajo que quieres ir (1 al 15)");
 	 trabajo = teclado.nextInt();
 	System.out.println ("");
     switch (trabajo) {
@@ -95,10 +99,18 @@ public class Principal {
         objbono.bono();
         break;
         case 12:
+        DemoIfAnidado objDemoIfAnidado = new DemoIfAnidado();
+        objDemoIfAnidado.demoIfAnidado();
+        break;
+        case 13:
+        DemoOperadorTernario objDemoOperadorTernario = new DemoOperadorTernario();
+        objDemoOperadorTernario.demoOperadorTernario();
+        break;
+        case 14:
         DemoFor objDemoFor = new DemoFor();
         objDemoFor.demofor();
         break;
-        case 13:
+        case 15:
         SumaPares objSumaPares = new SumaPares();
         objSumaPares.sumapares();
         break;     

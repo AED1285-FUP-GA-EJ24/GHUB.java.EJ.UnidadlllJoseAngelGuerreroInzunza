@@ -1,5 +1,6 @@
 ./vocal/Vocal.java
 ./sumaPares/SumaPares.java
+./demoIfAnidado/DemoIfAnidado.java
 ./miTest/AppTest.java
 ./bono/Bono.java
 ./demoFor/DemoFor.java
