@@ -2,21 +2,33 @@ package miPrincipal;
 
 import java.util.Scanner;
 
+import anoBisiesto.AnoBisiesto;
 import bono.Bono;
 import calificacion.Calificacion;
+import ceroOPar.CeroOPar;
+import clasificacion.Clasificacion;
 import hermanos.Hermanos;
 import incentivo.Incentivo;
 import ine.Ine;
+import maximoMedioMinimo.MMM;
 import mayor.Mayor;
 import menorde3.Menorde3;
+import operadorTernario.OperadorTernario;
 import peaje.Peaje;
+import precioRestaurante.Restaurante;
+import promedioEstudiantes.Estudiantes;
 import romano.Romano;
 import sumaPares.SumaPares;
+import tienda.Tienda;
 import triangulo.Triangulo;
+import usoPrintf.UsoPrintf;
 import vocal.Vocal;
 import demoFor.DemoFor;
 import demoIfAnidado.DemoIfAnidado;
 import demoOperadorTernario.DemoOperadorTernario;
+import descomponerNumero.DescomponerNumero;
+import diasSemana.Semana;
+import examenAR.Examen;
 
 
 
@@ -46,6 +58,23 @@ public class Principal {
     System.out.println ("13) Operador ternario ?: "); 
     System.out.println("14) Demo For                         ");
     System.out.println("15)Suma Pares                      ");
+    System.out.println("");
+    System.out.println( "------------------------------------------------------------------");
+	System.out.println ("                            TRABAJOS DE UNIDAD 3");
+	System.out.println ("------------------------------------------------------------------");
+	System.out.println ("");
+	System.out.println ("16) Calcular si número es cero o par"); 
+	System.out.println ("17) Descomponer entero de 2 cifras y a decenas y unidades "); 
+	System.out.println ("18) Clasificación de números"); 
+    System.out.println ("19) Año bisiesto"); 
+    System.out.println ("20) Clasificación de estudiantes"); 
+    System.out.println ("21) Descuento en tienda"); 
+    System.out.println ("22) Días de la semana"); 
+    System.out.println ("23) Menú de restaurante"); 
+    System.out.println ("24) Calificación de examen"); 
+    System.out.println ("25) Máximo, medio y mínimo"); 
+    System.out.println ("26) Uso de operador ternario "); 
+    System.out.println ("27) : Uso de printf"); 
 
 	System.out.println ("");
 	System.out.println ("..................................................................");
@@ -113,7 +142,55 @@ public class Principal {
         case 15:
         SumaPares objSumaPares = new SumaPares();
         objSumaPares.sumapares();
-        break;     
+        break;    
+        case 16:
+        Clasificacion objClasificacion = new Clasificacion();
+        objClasificacion.clasificacion();
+        break; 
+        case 17:
+        CeroOPar objCeroOPar = new CeroOPar();
+        objCeroOPar.ceroOPar();
+        break;
+        case 18:
+        DescomponerNumero objDescomponerNumero = new DescomponerNumero();
+        objDescomponerNumero.descomponerNumero();
+        break;
+        case 19:
+        AnoBisiesto objAnoBisiesto = new AnoBisiesto();
+        objAnoBisiesto.anoBisiesto();
+        break;
+        case 20:
+        Estudiantes objEstudiantes = new Estudiantes();
+        objEstudiantes.estudiantes();
+        break; 
+        case 21:
+        Tienda objTienda = new Tienda();
+        objTienda.tienda();
+        break; 
+        case 22:
+        Semana objSemana = new Semana();
+        objSemana.semana();
+        break; 
+        case 23:
+        Restaurante objRestaurante = new Restaurante();
+        objRestaurante.restaurante();
+        break; 
+        case 24:
+        Examen objExamen = new Examen();
+        objExamen.examen();
+        break; 
+        case 25:
+        MMM objMMM = new MMM();
+        objMMM.mMM();
+        break; 
+        case 26:
+        OperadorTernario objOperadorTernario = new OperadorTernario();
+        objOperadorTernario.operadorTernario();
+        break; 
+        case 27:
+        UsoPrintf objUsoPrintf = new UsoPrintf();
+        objUsoPrintf.usoPrintf();
+        break; 
     
         default:
         System.out.println("No existe");
