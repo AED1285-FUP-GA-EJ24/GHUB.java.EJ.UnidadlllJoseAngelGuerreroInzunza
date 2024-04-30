@@ -5,6 +5,7 @@
 ./anoBisiesto/AnoBisiesto.java
 ./demoOperadorTernario/DemoOperadorTernario.java
 ./demoIfAnidado/DemoIfAnidado.java
+./demoMientras/DemoMientra.java
 ./maximoMedioMinimo/MMM.java
 ./miTest/AppTest.java
 ./bono/Bono.java

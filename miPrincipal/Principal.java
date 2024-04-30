@@ -61,7 +61,7 @@ public class Principal {
     System.out.println("14) Demo For                         ");
     System.out.println("15) Suma Pares                      ");
     System.out.println("16) Argumento                      ");
-    System.out.println("17) Ciclo While                      ");
+    System.out.println("18) Ciclo While                      ");
     System.out.println("");
     System.out.println( "------------------------------------------------------------------");
 	System.out.println ("                            TRABAJOS DE UNIDAD 3");
