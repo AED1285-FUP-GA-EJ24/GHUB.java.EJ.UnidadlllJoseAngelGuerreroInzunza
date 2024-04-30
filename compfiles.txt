@@ -1,6 +1,7 @@
 ./clasificacion/Clasificacion.java
 ./vocal/Vocal.java
 ./sumaPares/SumaPares.java
+./ceroOPar/CeroOPar.java
 ./anoBisiesto/AnoBisiesto.java
 ./demoOperadorTernario/DemoOperadorTernario.java
 ./demoIfAnidado/DemoIfAnidado.java
@@ -10,6 +11,7 @@
 ./precioRestaurante/Restaurante.java
 ./demoFor/DemoFor.java
 ./incentivo/Incentivo.java
+./tablaMultiplicar/TablaMultiplicar.java
 ./promedioEstudiantes/Estudiantes.java
 ./mayor/Mayor.java
 ./usoPrintf/UsoPrintf.java
@@ -21,6 +23,7 @@
 ./romano/Romano.java
 ./calificacion/Calificacion.java
 ./examenAR/Examen.java
+./descomponerNumero/DescomponerNumero.java
 ./tienda/Tienda.java
 ./ine/Ine.java
 ./hermanos/Hermanos.java

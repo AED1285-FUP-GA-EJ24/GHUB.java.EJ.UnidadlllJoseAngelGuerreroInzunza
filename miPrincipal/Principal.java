@@ -19,6 +19,7 @@ import precioRestaurante.Restaurante;
 import promedioEstudiantes.Estudiantes;
 import romano.Romano;
 import sumaPares.SumaPares;
+import tablaMultiplicar.TablaMultiplicar;
 import tienda.Tienda;
 import triangulo.Triangulo;
 import usoPrintf.UsoPrintf;
@@ -57,29 +58,30 @@ public class Principal {
     System.out.println ("12) Formas de IF anidado"); 
     System.out.println ("13) Operador ternario ?: "); 
     System.out.println("14) Demo For                         ");
-    System.out.println("15)Suma Pares                      ");
+    System.out.println("15) Suma Pares                      ");
+    System.out.println("16) Argumento                      ");
     System.out.println("");
     System.out.println( "------------------------------------------------------------------");
 	System.out.println ("                            TRABAJOS DE UNIDAD 3");
 	System.out.println ("------------------------------------------------------------------");
 	System.out.println ("");
-	System.out.println ("16) Calcular si número es cero o par"); 
-	System.out.println ("17) Descomponer entero de 2 cifras y a decenas y unidades "); 
-	System.out.println ("18) Clasificación de números"); 
-    System.out.println ("19) Año bisiesto"); 
-    System.out.println ("20) Clasificación de estudiantes"); 
-    System.out.println ("21) Descuento en tienda"); 
-    System.out.println ("22) Días de la semana"); 
-    System.out.println ("23) Menú de restaurante"); 
-    System.out.println ("24) Calificación de examen"); 
-    System.out.println ("25) Máximo, medio y mínimo"); 
-    System.out.println ("26) Uso de operador ternario "); 
-    System.out.println ("27) : Uso de printf"); 
+	System.out.println ("17) Calcular si número es cero o par"); 
+	System.out.println ("18) Descomponer entero de 2 cifras y a decenas y unidades "); 
+	System.out.println ("19) Clasificación de números"); 
+    System.out.println ("20) Año bisiesto"); 
+    System.out.println ("21) Clasificación de estudiantes"); 
+    System.out.println ("22) Descuento en tienda"); 
+    System.out.println ("23) Días de la semana"); 
+    System.out.println ("24) Menú de restaurante"); 
+    System.out.println ("25) Calificación de examen"); 
+    System.out.println ("26) Máximo, medio y mínimo"); 
+    System.out.println ("27) Uso de operador ternario "); 
+    System.out.println ("28) : Uso de printf"); 
 
 	System.out.println ("");
 	System.out.println ("..................................................................");
 	System.out.println ("");
-	System.out.println ("Introduzca el trabajo que quieres ir (1 al 15)");
+	System.out.println ("Introduzca el trabajo que quieres ir (1 al 28)");
 	 trabajo = teclado.nextInt();
 	System.out.println ("");
     switch (trabajo) {
@@ -142,52 +144,58 @@ public class Principal {
         case 15:
         SumaPares objSumaPares = new SumaPares();
         objSumaPares.sumapares();
-        break;    
+        break;
         case 16:
+        TablaMultiplicar objTablaMultiplicar = new TablaMultiplicar();
+        System.out.println("Proporciona numero para ver su tabla");
+        int n = teclado.nextInt();
+        objTablaMultiplicar.tablaMultiplicar(n);
+        break;       
+        case 17:
         Clasificacion objClasificacion = new Clasificacion();
         objClasificacion.clasificacion();
         break; 
-        case 17:
+        case 18:
         CeroOPar objCeroOPar = new CeroOPar();
         objCeroOPar.ceroOPar();
         break;
-        case 18:
+        case 19:
         DescomponerNumero objDescomponerNumero = new DescomponerNumero();
         objDescomponerNumero.descomponerNumero();
         break;
-        case 19:
+        case 20:
         AnoBisiesto objAnoBisiesto = new AnoBisiesto();
         objAnoBisiesto.anoBisiesto();
         break;
-        case 20:
+        case 21:
         Estudiantes objEstudiantes = new Estudiantes();
         objEstudiantes.estudiantes();
         break; 
-        case 21:
+        case 22:
         Tienda objTienda = new Tienda();
         objTienda.tienda();
         break; 
-        case 22:
+        case 23:
         Semana objSemana = new Semana();
         objSemana.semana();
         break; 
-        case 23:
+        case 24:
         Restaurante objRestaurante = new Restaurante();
         objRestaurante.restaurante();
         break; 
-        case 24:
+        case 25:
         Examen objExamen = new Examen();
         objExamen.examen();
         break; 
-        case 25:
+        case 26:
         MMM objMMM = new MMM();
         objMMM.mMM();
         break; 
-        case 26:
+        case 27:
         OperadorTernario objOperadorTernario = new OperadorTernario();
         objOperadorTernario.operadorTernario();
         break; 
-        case 27:
+        case 28:
         UsoPrintf objUsoPrintf = new UsoPrintf();
         objUsoPrintf.usoPrintf();
         break; 
