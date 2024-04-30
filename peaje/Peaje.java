@@ -2,7 +2,7 @@ package peaje;
 /*
  * Proposito: Selecciona de un Menu el tipo de vehículo
  *       y muetra la tarifa de peaje que corresponda
- * Autor: Lourdes Armenta
+ * Autor: Jose Angel
  * Fecha: 19/abril/24
  */
 import java.util.Scanner;

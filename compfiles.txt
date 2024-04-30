@@ -1,5 +1,6 @@
 ./vocal/Vocal.java
 ./sumaPares/SumaPares.java
+./demoOperadorTernario/DemoOperadorTernario.java
 ./demoIfAnidado/DemoIfAnidado.java
 ./miTest/AppTest.java
 ./bono/Bono.java
@@ -14,3 +15,4 @@
 ./calificacion/Calificacion.java
 ./ine/Ine.java
 ./hermanos/Hermanos.java
+./matricula.java
