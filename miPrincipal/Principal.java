@@ -26,6 +26,7 @@ import usoPrintf.UsoPrintf;
 import vocal.Vocal;
 import demoFor.DemoFor;
 import demoIfAnidado.DemoIfAnidado;
+import demoMientras.DemoMientra;
 import demoOperadorTernario.DemoOperadorTernario;
 import descomponerNumero.DescomponerNumero;
 import diasSemana.Semana;
@@ -60,6 +61,7 @@ public class Principal {
     System.out.println("14) Demo For                         ");
     System.out.println("15) Suma Pares                      ");
     System.out.println("16) Argumento                      ");
+    System.out.println("17) Ciclo While                      ");
     System.out.println("");
     System.out.println( "------------------------------------------------------------------");
 	System.out.println ("                            TRABAJOS DE UNIDAD 3");
@@ -150,52 +152,56 @@ public class Principal {
         System.out.println("Proporciona numero para ver su tabla");
         int n = teclado.nextInt();
         objTablaMultiplicar.tablaMultiplicar(n);
-        break;       
+        break;  
         case 17:
         Clasificacion objClasificacion = new Clasificacion();
         objClasificacion.clasificacion();
-        break; 
+        break;      
         case 18:
+        DemoMientra objDemoMientra = new DemoMientra();
+        objDemoMientra.demoMientra();
+        break; 
+        case 19:
         CeroOPar objCeroOPar = new CeroOPar();
         objCeroOPar.ceroOPar();
         break;
-        case 19:
+        case 20:
         DescomponerNumero objDescomponerNumero = new DescomponerNumero();
         objDescomponerNumero.descomponerNumero();
         break;
-        case 20:
+        case 21:
         AnoBisiesto objAnoBisiesto = new AnoBisiesto();
         objAnoBisiesto.anoBisiesto();
         break;
-        case 21:
+        case 22:
         Estudiantes objEstudiantes = new Estudiantes();
         objEstudiantes.estudiantes();
         break; 
-        case 22:
+        case 23:
         Tienda objTienda = new Tienda();
         objTienda.tienda();
         break; 
-        case 23:
+        case 24:
         Semana objSemana = new Semana();
         objSemana.semana();
         break; 
-        case 24:
+        case 25:
         Restaurante objRestaurante = new Restaurante();
         objRestaurante.restaurante();
         break; 
-        case 25:
+        case 26:
         Examen objExamen = new Examen();
         objExamen.examen();
         break; 
-        case 26:
+        case 27:
         MMM objMMM = new MMM();
         objMMM.mMM();
         break; 
-        case 27:
+        case 28:
         OperadorTernario objOperadorTernario = new OperadorTernario();
         objOperadorTernario.operadorTernario();
         break; 
-        case 28:
+        case 29:
         UsoPrintf objUsoPrintf = new UsoPrintf();
         objUsoPrintf.usoPrintf();
         break; 
