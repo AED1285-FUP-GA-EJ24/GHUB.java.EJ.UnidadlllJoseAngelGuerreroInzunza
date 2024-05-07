@@ -15,9 +15,11 @@
 ./tablaMultiplicar/TablaMultiplicar.java
 ./promedioEstudiantes/Estudiantes.java
 ./mayor/Mayor.java
+./promedio/Promedio.java
 ./usoPrintf/UsoPrintf.java
 ./menorde3/Menorde3.java
 ./miPrincipal/Principal.java
+./calorias/Calorias.java
 ./triangulo/Triangulo.java
 ./peaje/Peaje.java
 ./operadorTernario/OperadorTernario.java

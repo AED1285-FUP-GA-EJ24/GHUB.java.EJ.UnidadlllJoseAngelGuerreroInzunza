@@ -16,6 +16,7 @@ import menorde3.Menorde3;
 import operadorTernario.OperadorTernario;
 import peaje.Peaje;
 import precioRestaurante.Restaurante;
+import promedio.Promedio;
 import promedioEstudiantes.Estudiantes;
 import romano.Romano;
 import sumaPares.SumaPares;
@@ -62,23 +63,24 @@ public class Principal {
     System.out.println("15) Suma Pares                      ");
     System.out.println("16) Argumento                      ");
     System.out.println("18) Ciclo While                      ");
+    System.out.println("19) Calculo de calorias                     ");
     System.out.println("");
     System.out.println( "------------------------------------------------------------------");
 	System.out.println ("                            TRABAJOS DE UNIDAD 3");
 	System.out.println ("------------------------------------------------------------------");
 	System.out.println ("");
-	System.out.println ("17) Calcular si número es cero o par"); 
-	System.out.println ("18) Descomponer entero de 2 cifras y a decenas y unidades "); 
-	System.out.println ("19) Clasificación de números"); 
-    System.out.println ("20) Año bisiesto"); 
-    System.out.println ("21) Clasificación de estudiantes"); 
-    System.out.println ("22) Descuento en tienda"); 
-    System.out.println ("23) Días de la semana"); 
-    System.out.println ("24) Menú de restaurante"); 
-    System.out.println ("25) Calificación de examen"); 
-    System.out.println ("26) Máximo, medio y mínimo"); 
-    System.out.println ("27) Uso de operador ternario "); 
-    System.out.println ("28) : Uso de printf"); 
+	System.out.println ("20) Calcular si número es cero o par"); 
+	System.out.println ("21) Descomponer entero de 2 cifras y a decenas y unidades "); 
+	System.out.println ("22) Clasificación de números"); 
+    System.out.println ("23) Año bisiesto"); 
+    System.out.println ("24) Clasificación de estudiantes"); 
+    System.out.println ("25) Descuento en tienda"); 
+    System.out.println ("26) Días de la semana"); 
+    System.out.println ("27) Menú de restaurante"); 
+    System.out.println ("28) Calificación de examen"); 
+    System.out.println ("29) Máximo, medio y mínimo"); 
+    System.out.println ("30) Uso de operador ternario "); 
+    System.out.println ("31) : Uso de printf"); 
 
 	System.out.println ("");
 	System.out.println ("..................................................................");
@@ -205,6 +207,10 @@ public class Principal {
         UsoPrintf objUsoPrintf = new UsoPrintf();
         objUsoPrintf.usoPrintf();
         break; 
+        case 30:
+        Promedio objPromedio = new Promedio();
+        objPromedio.promedio();
+        break;
     
         default:
         System.out.println("No existe");
