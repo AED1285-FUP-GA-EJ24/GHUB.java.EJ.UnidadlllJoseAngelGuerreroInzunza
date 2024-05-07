@@ -31,6 +31,7 @@ import demoMientras.DemoMientra;
 import demoOperadorTernario.DemoOperadorTernario;
 import descomponerNumero.DescomponerNumero;
 import diasSemana.Semana;
+import ecuacion.Ecuacion;
 import examenAR.Examen;
 
 
@@ -210,6 +211,10 @@ public class Principal {
         case 30:
         Promedio objPromedio = new Promedio();
         objPromedio.promedio();
+        break;
+        case 31:
+        Ecuacion objEcuacion = new Ecuacion();
+        objEcuacion.ecuacion();
         break;
     
         default:
