@@ -13,6 +13,7 @@ import ine.Ine;
 import maximoMedioMinimo.MMM;
 import mayor.Mayor;
 import menorde3.Menorde3;
+import menu.Menu;
 import operadorTernario.OperadorTernario;
 import peaje.Peaje;
 import precioRestaurante.Restaurante;
@@ -42,7 +43,7 @@ public class Principal {
     Scanner teclado = new Scanner(System.in);
     
     int trabajo;
-
+do{
     System.out.println( "------------------------------------------------------------------");
 	System.out.println ("                            TRABAJOS DE UNIDAD 3");
 	System.out.println ("------------------------------------------------------------------");
@@ -82,6 +83,8 @@ public class Principal {
     System.out.println ("29) Máximo, medio y mínimo"); 
     System.out.println ("30) Uso de operador ternario "); 
     System.out.println ("31) : Uso de printf"); 
+    System.out.println ("32) : Uso de printf"); 
+    System.out.println ("99) : Salir"); 
 
 	System.out.println ("");
 	System.out.println ("..................................................................");
@@ -216,11 +219,20 @@ public class Principal {
         Ecuacion objEcuacion = new Ecuacion();
         objEcuacion.ecuacion();
         break;
+        case 32:
+        Menu objMenu = new Menu();
+        objMenu.menu();
+        break;
+        case 99:
+        System.out.println("");
+        System.out.println("Saliste");
+        break;
     
         default:
         System.out.println("No existe");
             break;
     }
+}while(trabajo !=99);
     teclado.close();
     }
 }

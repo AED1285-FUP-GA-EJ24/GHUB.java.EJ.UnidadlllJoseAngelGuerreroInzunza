@@ -7,6 +7,7 @@
 ./demoIfAnidado/DemoIfAnidado.java
 ./ecuacion/Ecuacion.java
 ./demoMientras/DemoMientra.java
+./menu/Menu.java
 ./maximoMedioMinimo/MMM.java
 ./miTest/AppTest.java
 ./bono/Bono.java
@@ -23,6 +24,7 @@
 ./calorias/Calorias.java
 ./triangulo/Triangulo.java
 ./peaje/Peaje.java
+./cesar/Cesar.java
 ./operadorTernario/OperadorTernario.java
 ./romano/Romano.java
 ./calificacion/Calificacion.java
