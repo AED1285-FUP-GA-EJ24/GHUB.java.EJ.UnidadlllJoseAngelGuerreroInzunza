@@ -7,12 +7,14 @@ public class Ecuacion {
         //salida
         int y;
 //Usando While
+System.out.println("While ");
         while (x<10) {
             y=x+12;
             System.out.println("X = "+x+ " Y = "+y);
             x=x+1;
         }
 //Usando For
+System.out.println("For ");
         for(x=1;x<=10;x++){
             y=x+12;
             System.out.println("X = "+x+ " Y = "+y);
