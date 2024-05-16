@@ -4,6 +4,7 @@ import java.util.Scanner;
 
 import anoBisiesto.AnoBisiesto;
 import bono.Bono;
+import calculoSaldo.CalculoSaldo;
 import calificacion.Calificacion;
 import ceroOPar.CeroOPar;
 import clasificacion.Clasificacion;
@@ -30,6 +31,7 @@ import demoFor.DemoFor;
 import demoIfAnidado.DemoIfAnidado;
 import demoMientras.DemoMientra;
 import demoOperadorTernario.DemoOperadorTernario;
+import demoSentenciaBreak.DemoSentenciaBreak;
 import descomponerNumero.DescomponerNumero;
 import diasSemana.Semana;
 import ecuacion.Ecuacion;
@@ -84,12 +86,14 @@ do{
     System.out.println ("30) Uso de operador ternario "); 
     System.out.println ("31) : Uso de printf"); 
     System.out.println ("32) : Uso de printf"); 
+    System.out.println ("32) : Sentencia break");
+    System.out.println ("33) : Calculo de saldo");
     System.out.println ("99) : Salir"); 
 
 	System.out.println ("");
 	System.out.println ("..................................................................");
 	System.out.println ("");
-	System.out.println ("Introduzca el trabajo que quieres ir (1 al 28)");
+	System.out.println ("Introduzca el trabajo que quieres ir (1 al 33)");
 	 trabajo = teclado.nextInt();
 	System.out.println ("");
     switch (trabajo) {
@@ -223,10 +227,19 @@ do{
         Menu objMenu = new Menu();
         objMenu.menu();
         break;
+        case 33:
+        DemoSentenciaBreak objDemoSentenciaBreak = new DemoSentenciaBreak();
+        objDemoSentenciaBreak.demoSentenciaBreak();
+        break;
+        case 34:
+        CalculoSaldo objCalculoSaldo = new CalculoSaldo();
+        objCalculoSaldo.calculoSaldo();
+        break;
         case 99:
         System.out.println("");
         System.out.println("Saliste");
         break;
+
     
         default:
         System.out.println("No existe");
