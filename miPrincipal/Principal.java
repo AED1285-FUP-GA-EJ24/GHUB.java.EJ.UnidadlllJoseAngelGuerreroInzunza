@@ -1,251 +1,192 @@
 package miPrincipal;
-
 import java.util.Scanner;
 
-import anoBisiesto.AnoBisiesto;
 import bono.Bono;
-import calculoSaldo.CalculoSaldo;
-import calificacion.Calificacion;
-import ceroOPar.CeroOPar;
-import clasificacion.Clasificacion;
 import hermanos.Hermanos;
 import incentivo.Incentivo;
 import ine.Ine;
-import maximoMedioMinimo.MMM;
-import mayor.Mayor;
 import menorde3.Menorde3;
-import menu.Menu;
-import operadorTernario.OperadorTernario;
+import menorde3.Menorde3;
 import peaje.Peaje;
-import precioRestaurante.Restaurante;
-import promedio.Promedio;
-import promedioEstudiantes.Estudiantes;
+import triangulo.Triangulo;
 import romano.Romano;
 import sumaPares.SumaPares;
 import tablaMultiplicar.TablaMultiplicar;
-import tienda.Tienda;
-import triangulo.Triangulo;
-import usoPrintf.UsoPrintf;
 import vocal.Vocal;
+import calificacion.Calificacion;
 import demoFor.DemoFor;
 import demoIfAnidado.DemoIfAnidado;
-import demoMientras.DemoMientra;
+import demoOperadorTernario.DemoOperadorTernario;
 import demoOperadorTernario.DemoOperadorTernario;
 import demoSentenciaBreak.DemoSentenciaBreak;
-import descomponerNumero.DescomponerNumero;
-import diasSemana.Semana;
+import demoWhile.DemoWhile;
+import tablaMultiplicar.TablaMultiplicar;
+import calorias.Calorias;
+import promedio2.Promedio;
 import ecuacion.Ecuacion;
-import examenAR.Examen;
-
-
+import leerX.LeerX;
+import menu.Menu;
+import demoDoWhile.DemoDoWhile;
+import demoSentenciaBreak.DemoSentenciaBreak;
+import calculoSaldo.CalculoSaldo;
 
 public class Principal {
     
     public static void main(String[] args) {
-    Scanner teclado = new Scanner(System.in);
-    
-    int trabajo;
-do{
-    System.out.println( "------------------------------------------------------------------");
-	System.out.println ("                            TRABAJOS DE UNIDAD 3");
-	System.out.println ("------------------------------------------------------------------");
-	System.out.println ("");
-	System.out.println ("1) Calcular edad INE"); 
-	System.out.println ("2) Hermano mayor"); 
-	System.out.println ("3) Incentivos"); 
-    System.out.println ("4) Mayor de 3"); 
-    System.out.println ("5) Tipo de triangulo"); 
-    System.out.println ("6) Arabigo a romano"); 
-    System.out.println ("7) Caracter a vocal"); 
-    System.out.println ("8) Menor, igual o mayor a 3"); 
-    System.out.println ("9) Calificaion"); 
-    System.out.println ("10) Tarifa"); 
-    System.out.println ("11) Determinacion de bono"); 
-    System.out.println ("12) Formas de IF anidado"); 
-    System.out.println ("13) Operador ternario ?: "); 
-    System.out.println("14) Demo For                         ");
-    System.out.println("15) Suma Pares                      ");
-    System.out.println("16) Argumento                      ");
-    System.out.println("18) Ciclo While                      ");
-    System.out.println("19) Calculo de calorias                     ");
-    System.out.println("");
-    System.out.println( "------------------------------------------------------------------");
-	System.out.println ("                            TRABAJOS DE UNIDAD 3");
-	System.out.println ("------------------------------------------------------------------");
-	System.out.println ("");
-	System.out.println ("20) Calcular si número es cero o par"); 
-	System.out.println ("21) Descomponer entero de 2 cifras y a decenas y unidades "); 
-	System.out.println ("22) Clasificación de números"); 
-    System.out.println ("23) Año bisiesto"); 
-    System.out.println ("24) Clasificación de estudiantes"); 
-    System.out.println ("25) Descuento en tienda"); 
-    System.out.println ("26) Días de la semana"); 
-    System.out.println ("27) Menú de restaurante"); 
-    System.out.println ("28) Calificación de examen"); 
-    System.out.println ("29) Máximo, medio y mínimo"); 
-    System.out.println ("30) Uso de operador ternario "); 
-    System.out.println ("31) : Uso de printf"); 
-    System.out.println ("32) : Uso de printf"); 
-    System.out.println ("32) : Sentencia break");
-    System.out.println ("33) : Calculo de saldo");
-    System.out.println ("99) : Salir"); 
+        Scanner entrada = new Scanner(System.in);
+        int opcion;
+        do{
+          System.out.println("**************************************");
+          System.out.println("      MENU DE OPCIONES UNIDAD III     ");
+          System.out.println("**************************************");
+          System.out.println("* 1) Calcular Edad para INE           ");                
+          System.out.println("* 2) Hermano Mayor                    ");
+          System.out.println("* 3) Incentivos de Unidades Producidas"); 
+          System.out.println("* 4) Determinar mayor de 3 Números    ");
+          System.out.println("* 5) Tipo de Triángulo                ");
+          System.out.println("* 6) Convertir Arábigo a Romano       ");
+          System.out.println("* 7) Convertir Caracter a Vocal       ");
+          System.out.println("* 8) Menor, Igual o Mayor de 3        ");
+          System.out.println("* 9) Determinar Tipo de Calificación  ");
+          System.out.println("*10) Seleccionar Tipo Tarifa          ");
+          System.out.println("*11) Determinación de Bono            ");
+          System.out.println("*12) Formas de If anidado             ");
+          System.out.println("*13) Operador Ternario ?:             ");     
+          System.out.println("*14) Demo For                         ");
+          System.out.println("*15) Suma los M primeros búmero pares ");
+          System.out.println("*16) Tabla Mutiplicar con argumentos  ");
+          System.out.println("*17) Demo ciclo while                 ");
+          System.out.println(" 18) Calculo de Calorias              ");
+          System.out.println(" 19) Promedio Calificaciones          ");
+          System.out.println("*20) Calcular ecuacion                ");
+          System.out.println("*21) Leer valor de x e imprimir y     ");
+          System.out.println("*22) Promedio Calificaciones (centinela)");
+          System.out.println("*23) Elaboracion Menu                 ");
+          System.out.println("*24) Demo ciclo do..while"            );
+          System.out.println("*25) Demo break y continue"            );
+          System.out.println("*26) calculo de saldo");
 
-	System.out.println ("");
-	System.out.println ("..................................................................");
-	System.out.println ("");
-	System.out.println ("Introduzca el trabajo que quieres ir (1 al 33)");
-	 trabajo = teclado.nextInt();
-	System.out.println ("");
-    switch (trabajo) {
-        case 1:
-        Ine objIne = new Ine();
-        objIne.ine();
-            break;
-        case 2:
-        Hermanos objHermanos = new Hermanos();
-        objHermanos.Diferencia();
-            break;
-        case 3:
-        Incentivo objIncentivo = new Incentivo();
-        objIncentivo.Incentivo();
-            break;
-        case 4:
-        Mayor objmayor = new Mayor();
-        objmayor.mayor();
-            break;    
-        case 5:
-        Triangulo triangulo = new Triangulo();
-        triangulo.triangulo();
-            break;
-        case 6:
-        Romano objromano = new Romano();
-        objromano.romano();
-            break;
-        case 7:
-        Vocal objvocal = new Vocal();
-        objvocal.Vocal();
-            break;
-        case 8:
-        Menorde3 menorde3 = new Menorde3();
-        menorde3.menorde3();
-            break;
-        case 9:
-        Calificacion calificacion = new Calificacion();
-        calificacion.calificacion();
-            break;
-        case 10:
-        Peaje objpeaje = new Peaje();
-        objpeaje.peaje();
-            break;
-        case 11:
-        Bono objbono = new Bono();
-        objbono.bono();
-        break;
-        case 12:
-        DemoIfAnidado objDemoIfAnidado = new DemoIfAnidado();
-        objDemoIfAnidado.demoIfAnidado();
-        break;
-        case 13:
-        DemoOperadorTernario objDemoOperadorTernario = new DemoOperadorTernario();
-        objDemoOperadorTernario.demoOperadorTernario();
-        break;
-        case 14:
-        DemoFor objDemoFor = new DemoFor();
-        objDemoFor.demofor();
-        break;
-        case 15:
-        SumaPares objSumaPares = new SumaPares();
-        objSumaPares.sumapares();
-        break;
-        case 16:
-        TablaMultiplicar objTablaMultiplicar = new TablaMultiplicar();
-        System.out.println("Proporciona numero para ver su tabla");
-        int n = teclado.nextInt();
-        objTablaMultiplicar.tablaMultiplicar(n);
-        break;  
-        case 17:
-        Clasificacion objClasificacion = new Clasificacion();
-        objClasificacion.clasificacion();
-        break;      
-        case 18:
-        DemoMientra objDemoMientra = new DemoMientra();
-        objDemoMientra.demoMientra();
-        break; 
-        case 19:
-        CeroOPar objCeroOPar = new CeroOPar();
-        objCeroOPar.ceroOPar();
-        break;
-        case 20:
-        DescomponerNumero objDescomponerNumero = new DescomponerNumero();
-        objDescomponerNumero.descomponerNumero();
-        break;
-        case 21:
-        AnoBisiesto objAnoBisiesto = new AnoBisiesto();
-        objAnoBisiesto.anoBisiesto();
-        break;
-        case 22:
-        Estudiantes objEstudiantes = new Estudiantes();
-        objEstudiantes.estudiantes();
-        break; 
-        case 23:
-        Tienda objTienda = new Tienda();
-        objTienda.tienda();
-        break; 
-        case 24:
-        Semana objSemana = new Semana();
-        objSemana.semana();
-        break; 
-        case 25:
-        Restaurante objRestaurante = new Restaurante();
-        objRestaurante.restaurante();
-        break; 
-        case 26:
-        Examen objExamen = new Examen();
-        objExamen.examen();
-        break; 
-        case 27:
-        MMM objMMM = new MMM();
-        objMMM.mMM();
-        break; 
-        case 28:
-        OperadorTernario objOperadorTernario = new OperadorTernario();
-        objOperadorTernario.operadorTernario();
-        break; 
-        case 29:
-        UsoPrintf objUsoPrintf = new UsoPrintf();
-        objUsoPrintf.usoPrintf();
-        break; 
-        case 30:
-        Promedio objPromedio = new Promedio();
-        objPromedio.promedio();
-        break;
-        case 31:
-        Ecuacion objEcuacion = new Ecuacion();
-        objEcuacion.ecuacion();
-        break;
-        case 32:
-        Menu objMenu = new Menu();
-        objMenu.menu();
-        break;
-        case 33:
-        DemoSentenciaBreak objDemoSentenciaBreak = new DemoSentenciaBreak();
-        objDemoSentenciaBreak.demoSentenciaBreak();
-        break;
-        case 34:
-        CalculoSaldo objCalculoSaldo = new CalculoSaldo();
-        objCalculoSaldo.calculoSaldo();
-        break;
-        case 99:
-        System.out.println("");
-        System.out.println("Saliste");
-        break;
 
-    
-        default:
-        System.out.println("No existe");
-            break;
+          System.out.println("*99) Salir ");
+          System.out.println("**************************************");
+          System.out.print("Seleccion Opcion:");
+          opcion = entrada.nextInt();
+          switch(opcion){
+              case 1:
+              Ine objIne = new Ine();
+              objIne.ine();
+              break;
+              case 2:
+              Hermanos Hermanos = new Hermanos();
+              Hermanos.Diferencia();
+              break;
+              case 3:
+              Incentivo incentivo = new Incentivo();
+              incentivo.incentivo();
+              break;
+              case 4:
+              Menorde3 objeto = new Menorde3();
+              objeto.menorde3();
+              break;
+              case 5:
+              Triangulo triangulo = new Triangulo();
+              triangulo.triangulo();
+              break;
+              case 6:
+              Romano objRomano = new Romano();
+              objRomano.romano();
+              break;
+              case 7:
+              Vocal vocal = new Vocal();
+              vocal.vocal();
+              break;
+              case 8:
+              Menorde3 objMenorde3 = new Menorde3();
+              objMenorde3.menorde3();
+              break;
+              case 9:
+              Calificacion objCalificacion = new Calificacion();
+              objCalificacion.calificacion();
+              break;
+              case 10:
+              Peaje obPeaje = new Peaje();
+              obPeaje.peaje();
+              break;
+              case 11:
+              Bono objBono = new Bono();
+              objBono.bono();
+              break;
+              case 12:
+                DemoIfAnidado objDemoIfAnidado = new DemoIfAnidado();
+                objDemoIfAnidado.demoIfAnidado();
+                break;
+              case 13:
+                DemoOperadorTernario objDemoOperadorTernario = new DemoOperadorTernario();
+                objDemoOperadorTernario.demoOperadorTernario();
+                break;
+              case 14:
+              DemoFor objDemoFor = new DemoFor();
+              objDemoFor.demofor();
+              break;
+              case 15:
+              SumaPares objSumaPares = new SumaPares();
+              objSumaPares.sumapares();
+              break;
+              case 16:
+              TablaMultiplicar objTablaMultiplicar = new TablaMultiplicar();
+              System.out.println("Proporciona número para generar tabla:");
+              int n = entrada.nextInt();
+              objTablaMultiplicar.tablaMultiplicar(n);
+              break;
+              case 17:
+                DemoWhile objdw = new DemoWhile();
+                objdw.demoWhile();
+                break;
+              case 18:
+                Calorias objCal= new Calorias();
+                objCal.calorias();
+                break;
+              case 19:
+                Promedio objProm = new Promedio();
+                objProm.promedio();
+                break;
+              case 20:
+                Ecuacion objEcu = new Ecuacion();
+                objEcu.ecuacion();
+                break;
+              case 21:
+                LeerX objLeerX = new LeerX();
+                objLeerX.leerX();
+                break;
+              case 22:
+                promedio3.Promedio objProm3 = new promedio3.Promedio();
+                objProm3.promedio();
+                break;
+              case 23:
+                Menu objMenu = new Menu();
+                objMenu.menu();
+                break;
+              case 24:
+                DemoDoWhile objDemoDoWhile = new DemoDoWhile();
+                objDemoDoWhile.demoDoWhile();
+                break;
+              case 25:
+                DemoSentenciaBreak DemoSentenciaBreak = new DemoSentenciaBreak();
+                DemoSentenciaBreak.demoSentenciaBreak();
+                break;
+              case 26:
+                CalculoSaldo objCalculoSaldo = new CalculoSaldo();
+                objCalculoSaldo.calculoSaldo();
+                
+
+              case 99:
+                 System.out.println("Hasta luego");
+                 break;
+              default:
+                System.out.println("Opción inválida");
+          }
+        } while (opcion != 99);
+        entrada.close();
     }
-}while(trabajo !=99);
-    teclado.close();
-    }
+
 }

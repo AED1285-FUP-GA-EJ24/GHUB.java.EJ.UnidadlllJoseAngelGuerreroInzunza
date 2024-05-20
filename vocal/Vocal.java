@@ -1,7 +1,7 @@
 package vocal;
 import java.util.Scanner;
 public class Vocal {
-    public void Vocal(){
+    public void vocal(){
         //Scanner
         Scanner teclado = new Scanner(System.in);
         //Entrada

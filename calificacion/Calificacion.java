@@ -37,6 +37,6 @@ public class Calificacion {
             break;
        }
        
-
+teclado.close();
     }
 }

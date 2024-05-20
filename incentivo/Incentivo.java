@@ -3,7 +3,7 @@ package incentivo;
 import java.util.Scanner;
 
 public class Incentivo {
- public void Incentivo(){
+ public void incentivo(){
     //Scanner
     Scanner teclado = new Scanner(System.in);
     //Salida
